@@ -1,4 +1,4 @@
-#onglets, #onglets ul /* Liste */     
+#menu, #menu ul /* Liste */     
 {
         padding : 0; /* pas de marge intérieure */
         margin : 0; /* ni extérieure */
@@ -7,14 +7,14 @@
         text-align : center; /* on centre le texte qui se trouve dans la liste */
 }
 
-#onglets /* Ensemble du menu */
+#menu /* Ensemble du menu */
 {
         font-weight : bold; /* on met le texte en gras */
         font-family : Arial; /* on utilise Arial, c'est plus beau ^^ */
         font-size : 12px; /* hauteur du texte : 12 pixels */
 }
 
-#onglets a /* Contenu des listes */
+#menu a /* Contenu des listes */
 {
         display : block; /* on change le type d'élément, les liens deviennent des balises de type block */
         padding : 0; /* aucune marge intérieure */
@@ -24,7 +24,7 @@
         width : 144px; /* largeur */
 }
 
-#onglets li /* Elements des listes */      
+#menu li /* Elements des listes */      
 { 
         float : left; 
         /* pour IE qui ne reconnaît pas "transparent" */
@@ -37,7 +37,7 @@ html>body #menu li
         border-right: 1px solid transparent ; /* on met une bordure transparente à droite de chaque élément */
 }
 
-#onglets li ul /* Sous-listes */
+#menu li ul /* Sous-listes */
 { 
         position: absolute; /* Position absolue */
         width: 144px; /* Largeur des sous-listes */
@@ -45,7 +45,7 @@ html>body #menu li
 }
 
 
-#onglets li ul li /* Éléments de sous-listes */
+#menu li ul li /* Éléments de sous-listes */
 {
         /* pour IE qui ne reconnaît pas "transparent" (comme précédemment) */
         border-top : 1px solid #fff; /* on met une bordure blanche en haut de chaque élément d'une sous liste */
@@ -57,7 +57,7 @@ html>body #menu li ul li
         border-top : 1px solid transparent; /* on met une bordure transparente en haut de chaque élément */
 }
 
-#onglets li ul ul 
+#menu li ul ul 
 {
         margin    : -22px 0 0 144px ; /* On décale les sous-sous-listes pour qu'elles ne soient pas au dessus des sous-listes */ 
         /* pour IE qui ne reconnaît pas "transparent" (comme précédemment) */
