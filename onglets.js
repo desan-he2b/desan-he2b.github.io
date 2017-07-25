@@ -1,9 +1,12 @@
-#onglets li:hover ul ul, #onglets li.sfhover ul ul /* Sous-sous-listes lorsque la souris passe sur un élément de liste */
-{
-        left: -999em; /* On expédie les sous-sous-listes hors du champ de vision */
+sfHover = function() {
+        var sfEls = document.getElementById("menu").getElementsByTagName("LI");
+        for (var i=0; i<sfEls.length; i++) {
+                sfEls[i].onmouseover=function() {
+                        this.className+=" sfhover";
+                }
+                sfEls[i].onmouseout=function() {
+                        this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+                }
+        }
 }
-
-#onglets li:hover ul, #onglets li li:hover ul, #onglets li.sfhover ul, #onglets li li.sfhover ul  /* Sous-listes lorsque la souris passe sur un élément de liste ET sous-sous-lites lorsque la souris passe sur un élément de sous-liste */
-{
-        left: auto; /* Repositionnement normal */
-        min-height: 0; /* Corrige un bug sous IE */
+if (window.attachEvent) window.attachEvent("onload", sfHover);
