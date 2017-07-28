@@ -31,3 +31,18 @@
 {
     background : #fff;
 }
+
+
+
+#entete, #menu {
+padding:1px 0;
+}
+#entete {
+background-color:#FF9900;
+text-align:center;
+}
+
+#menu  {
+float:left;
+width:240px;
+background-color:#FF3366;
